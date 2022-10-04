@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Vazir;
+    src: url('./Vazir-Regular-FD.woff');
+}
+* {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    box-sizing: border-box;
+}
+body {
+    background: #2b6777;
+    font-family: 'Vazir';
+}
+#app {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    padding: 1.5rem;
+    gap: 2rem;
+}
+.note {
+    height: 200px;
+    padding: 1rem;
+    color: #212121;
+    border: none;
+    border-radius: 1rem;
+    resize: none;
+    font: inherit;
+    outline: none;
+}
+.add-note {
+    height: 200px;
+    border: none;
+    outline: none;
+    background: #c8d8e4;
+    font-size: 8rem;
+    color: aliceblue;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 1rem;
+}
+.add-note:hover {
+    background: #52ab98;
+}
